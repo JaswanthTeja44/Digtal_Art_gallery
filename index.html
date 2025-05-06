@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Digital Art Gallery JHTK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Digital Art Gallery JHTK</h1>
+    <p>Upload and showcase your artwork with the world</p>
+  </header>
+
+  <div class="container">
+    <form id="uploadForm">
+      <input type="text" id="title" placeholder="Artwork Title" required />
+      <textarea id="description" placeholder="Artwork Description" required></textarea>
+      <input type="url" id="imageUrl" placeholder="Image URL (e.g., https://example.com/image.png)" required />
+      <div class="error" id="error"></div>
+      <button type="submit">Upload Artwork</button>
+    </form>
+
+    <div class="gallery" id="gallery"></div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
